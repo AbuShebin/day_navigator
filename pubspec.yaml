@@ -1,6 +1,6 @@
 name: day_navigator
-description: "A new Flutter package project."
-version: 0.0.1
+description: A simple Flutter widget to navigate between days with arrows and a date picker. Great for calendars, schedules, and reminders.
+version: 0.1.0
 homepage:
 
 environment:

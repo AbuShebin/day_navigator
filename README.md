@@ -1,4 +1,4 @@
-# day_navigator
+# day_navigator! [Pub Version](https://img.shields.io/pub/v/day_navigator.svg)
 
 A simple and clean Flutter widget that lets users navigate between days with arrow buttons and also pick a date using a date picker. Perfect for calendar-based apps, scheduling, reminders, and more.
 
@@ -12,6 +12,10 @@ A simple and clean Flutter widget that lets users navigate between days with arr
 ## Getting started
 
 Add this to your `pubspec.yaml`:
+
+## Demo
+![Day Navigator GIF](https://imgur.com/a/y8WX2YH)
+
 
 ```yaml
 dependencies:
@@ -29,13 +33,5 @@ DayNavigator(
 ),
 
 Made with 💙 by Shebin. Feel free to contribute, drop issues, or just star the repo if you like it!
-
----
-
-### 🚀 Now What?
-
-1. Replace your conflicted file (`README.md`) with the cleaned-up version above.
-2. Save it.
-3. Then run:
 
 ```.
