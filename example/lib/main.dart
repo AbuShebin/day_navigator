@@ -17,6 +17,9 @@ class MyApp extends StatelessWidget {
             onDateChanged: (date) {
               print("Selected: $date");
             },
+
+            /// Optional: Customize the color of the widget
+            color: Colors.blue,
           ),
         ),
       ),
