@@ -18,7 +18,7 @@ class DayNavigator extends StatefulWidget {
 
 class _DayNavigatorState extends State<DayNavigator> {
   late DateTime _focusedDay;
-  final Color defaultColor = Colors.blue;
+  final Color defaultColor = Colors.black;
 
   @override
   void initState() {
