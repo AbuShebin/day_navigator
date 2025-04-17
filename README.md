@@ -1,39 +1,41 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+# day_navigator
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/tools/pub/writing-package-pages).
-
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/to/develop-packages).
--->
-
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+A simple and clean Flutter widget that lets users navigate between days with arrow buttons and also pick a date using a date picker. Perfect for calendar-based apps, scheduling, reminders, and more.
 
 ## Features
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+- Go to next/previous day
+- Tap to pick a date with a date picker
+- Customizable color
+- Easy to integrate
 
 ## Getting started
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+Add this to your `pubspec.yaml`:
 
-## Usage
+```yaml
+dependencies:
+  day_navigator:
+    git:
+      url: https://github.com/AbuShebin/day_navigator.git
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
+### Usage:
+DayNavigator(
+  initialDate: DateTime.now(),
+  color: Colors.purple,
+  onDateChanged: (date) {
+    print("New date: $date");
+  },
+),
 
-```dart
-const like = 'sample';
-```
+Made with 💙 by Shebin. Feel free to contribute, drop issues, or just star the repo if you like it!
 
-## Additional information
+---
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+### 🚀 Now What?
+
+1. Replace your conflicted file (`README.md`) with the cleaned-up version above.
+2. Save it.
+3. Then run:
+
+```.
