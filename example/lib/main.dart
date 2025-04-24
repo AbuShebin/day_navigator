@@ -18,8 +18,11 @@ class MyApp extends StatelessWidget {
               print("Selected: $date");
             },
 
-            /// Optional: Customize the color of the widget
-            color: Colors.blue,
+            /// Optional: Customize the text color of the widget
+            textColor: Colors.blue,
+
+            /// Optional: Customize the button color of the widget
+            buttonColor: Colors.green,
           ),
         ),
       ),

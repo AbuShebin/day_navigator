@@ -1,15 +1,29 @@
 import 'package:flutter/material.dart';
 
+/// A widget that allows users to navigate between days using arrow buttons
+/// and a date picker popup.
+///
+/// Ideal for calendars, schedules, reminders, and date-driven UIs.
 class DayNavigator extends StatefulWidget {
+  /// The initial date to be shown when the widget is first built.
   final DateTime initialDate;
-  final Color? color;
+
+  /// Optional color for icons and text. Defaults to black.
+  final Color? textColor;
+  final Color? buttonColor;
+
+  /// Callback that is triggered when the selected date changes.
   final void Function(DateTime)? onDateChanged;
 
+  /// Creates a [DayNavigator] widget.
+  ///
+  /// The [initialDate] must not be null.
   const DayNavigator({
     super.key,
     required this.initialDate,
     this.onDateChanged,
-    this.color,
+    this.textColor,
+    this.buttonColor,
   });
 
   @override
@@ -88,7 +102,7 @@ class _DayNavigatorState extends State<DayNavigator> {
             icon: Icon(
               Icons.chevron_left,
               size: _iconSize(h),
-              color: widget.color ?? defaultColor,
+              color: widget.buttonColor ?? defaultColor,
             ),
             onPressed: () => _changeDay(-1),
           ),
@@ -97,15 +111,16 @@ class _DayNavigatorState extends State<DayNavigator> {
             child: Row(
               children: [
                 Text(
-                  _formatDate(_focusedDay), // Use formatted date here
+                  _formatDate(_focusedDay),
                   style: TextStyle(
-                      fontSize: _textSize(w),
-                      fontWeight: FontWeight.bold,
-                      color: widget.color ?? defaultColor),
+                    fontSize: _textSize(w),
+                    fontWeight: FontWeight.bold,
+                    color: widget.textColor ?? defaultColor,
+                  ),
                 ),
                 Icon(
                   Icons.arrow_drop_down,
-                  color: widget.color ?? Colors.black,
+                  color: widget.textColor ?? Colors.black,
                 )
               ],
             ),
@@ -114,7 +129,7 @@ class _DayNavigatorState extends State<DayNavigator> {
             icon: Icon(
               Icons.chevron_right,
               size: _iconSize(h),
-              color: widget.color ?? defaultColor,
+              color: widget.buttonColor ?? defaultColor,
             ),
             onPressed: () => _changeDay(1),
           ),
